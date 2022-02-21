@@ -1,0 +1,38 @@
+
+
+
+#BarChart { 
+    display: flex; 
+    flex-direction: row; /* Arrange the Bars Horizontally using FlexBox  */
+    align-items: flex-end; /* Have the bars start at the bottom and go up */
+    justify-content: center; /* Center the bars in the middle of the screen */
+    margin: 50px;
+  }
+  
+  .bar {
+    background-color: #7d8bd2; /* Have each bar be a nice green */
+    width: 10px; /* The animation will start with each bar being 10px wide, and then expand outwards */
+    border: 1px solid #848484;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .container-chart {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .graph-chart {
+    margin: 0 auto;
+  }
+
+  .my-profile{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    background-color: #03DAC6;
+    width: fit-content;
+    border-radius: 3px;
+  }

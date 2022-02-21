@@ -1,0 +1,24 @@
+
+.wrapper{
+    height: calc(100vh - 80px);
+}
+
+.container-main{
+    max-width: 1260px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.layout-container{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+
+    .layout-sub{
+        position: relative;
+        width: 75%;
+        padding: 2rem;
+    }
+}

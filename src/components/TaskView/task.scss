@@ -1,0 +1,79 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-1 {
+  background: #f7f7f7;
+}
+.card {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 2rem;
+  width: 260px;
+  min-height: 200px;
+  display: grid;
+  border-radius: 10px;
+  box-shadow: 0px 30px 40px -20px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+  
+  .delete-task{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: red;
+  }
+
+  p{
+      color: #A4A6B3;
+  }
+}
+  
+.card:hover {
+  box-shadow: 0px 30px 40px -20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+.card__title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+.card__date {
+  margin: 0px 0px 0px 0px;
+  font-size: 14px;
+}
+
+.mark_sec{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+    div{
+        display: flex;
+        cursor: pointer;
+    }
+    .success{
+      color: green;
+    }
+    .danger{
+      color: red;
+    }
+}
+
+.complete{
+  border-top: 2px solid green;
+}
+.incomplete{
+  border-top: 2px solid red;
+}
+.default{
+  border-top: 2px solid;
+}
+  
+/* CARD BACKGROUNDS */
+.card-1 {
+  background: #f7f7f7;
+}
+  
+  

@@ -10,8 +10,8 @@ function App() {
   return (
     <Suspense fallback={() => <h3>Loading please wait!!</h3>}>
       <Switch>
-        <Route exact path="/" component={Signin} />
-        <Route exact path="/register" component={Signup} />
+        <Route path="/" component={Signin} />
+        <Route path="/register" component={Signup} />
         <ProtectedRoute path="/" component={Layout} />
         <Route path="*" render={PageNotFound} />
       </Switch>

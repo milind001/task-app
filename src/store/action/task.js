@@ -58,9 +58,9 @@ export const getTasks = (userId) => {
 const userId = localStorage.getItem('username');
 
 //Action dispatch to add user task
-export const addTask = (name, description) => {
+export const addTask = (name, description, username) => {
     return dispatch => {
-        axios.post('/task', {name, description, username: userId})
+        axios.post('/task', {name, description, username})
         .then(res => {
             dispatch(taskAddSuccess())
             toast.success("Success: Task added")

@@ -21,11 +21,12 @@ const Addtask = () => {
     };
 
     const dispatch = useDispatch();
+    const username = localStorage.getItem('username');
 
     const handleSubmit = e =>{
         e.preventDefault();
         const { name, description } = input;
-        dispatch(actions.addTask(name, description));
+        dispatch(actions.addTask(name, description, username));
         //clear input fields 
         setInput({
             name: "",

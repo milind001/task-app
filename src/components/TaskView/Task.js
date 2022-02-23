@@ -21,14 +21,16 @@ const Task = memo((props) => {
   }
 
   const dispatch = useDispatch();
+  //get username from localstorage
+  const userId = localStorage.getItem('username');
 
   const handleUpdate = useCallback((value, taskId) => {
-    dispatch(actions.updateTask(value, taskId))
-  }, [dispatch]);
+    dispatch(actions.updateTask(value, taskId, userId))
+  }, [dispatch, userId]);
 
   const handleDelete = useCallback((taskId) => {
-    dispatch(actions.deleteTask(taskId))
-  }, [dispatch])
+    dispatch(actions.deleteTask(taskId, userId))
+  }, [dispatch, userId])
 
   return  <>
             <div className={`card card-1 ${flag}`}>

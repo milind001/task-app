@@ -54,9 +54,6 @@ export const getTasks = (userId) => {
     }
 };
 
-//get username from localstorage
-const userId = localStorage.getItem('username');
-
 //Action dispatch to add user task
 export const addTask = (name, description, username) => {
     return dispatch => {
@@ -72,7 +69,7 @@ export const addTask = (name, description, username) => {
 }
 
 //Action dispatch to update user task
-export const updateTask = (value, taskId) => {
+export const updateTask = (value, taskId, userId) => {
     return dispatch => {
         axios.put(`/task/${taskId}/${value}`)
             .then(res => {
@@ -86,7 +83,7 @@ export const updateTask = (value, taskId) => {
 }
 
 //Action dispatch to delete user task
-export const deleteTask = (taskId) => {
+export const deleteTask = (taskId, userId) => {
     return dispatch => {
         axios.delete(`/task/${taskId}`)
             .then(res => {

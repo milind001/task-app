@@ -1,0 +1,218 @@
+
+
+// // -------------------Weather -------------------
+// :root {
+//     --bg_main: #0a1f44;
+//     --text_light: #fff;
+//     --text_med: #53627c;
+//     --text_dark: #1e2432;
+//     --red: #ff1e42;
+//     --darkred: #c3112d;
+//     --orange: #ff8c00;
+//   }
+//   .ajax-section {
+//     margin: 70px 0 20px;
+//   }
+  
+//   // .ajax-section .cities {
+//   //   display: grid;
+//   //   grid-gap: 32px 20px;
+//   //   grid-template-columns: repeat(4, 1fr);
+//   // }
+  
+//   .ajax-section .city {
+//     position: relative;
+//     padding: 40px 10%;
+//     border-radius: 20px;
+//     background: var(--text_light);
+//     color: var(--text_med);
+//   }
+  
+//   .ajax-section .city::after {
+//     content: '';
+//     width: 90%;
+//     height: 50px;
+//     position: absolute;
+//     bottom: -12px;
+//     left: 5%;
+//     z-index: -1;
+//     opacity: 0.3;
+//     border-radius: 20px;
+//     background: var(--text_light);
+//   }
+  
+//   .ajax-section figcaption {
+//     margin-top: 10px;
+//     text-transform: uppercase;
+//     letter-spacing: 0.05em;
+//   }
+  
+//   .ajax-section .city-temp {
+//     font-size: 5rem;
+//     font-weight: bold;
+//     margin-top: 10px;
+//     color: var(--text_dark);
+//   }
+  
+//   .ajax-section .city sup {
+//     font-size: 0.5em;
+//   }
+  
+//   .ajax-section .city-name sup {
+//     padding: 0.2em 0.6em;
+//     border-radius: 30px;
+//     color: var(--text_light);
+//     background: var(--orange);
+//   }
+  
+//   .ajax-section .city-icon {
+//     margin-top: 10px;
+//     width: 100px;
+//     height: 100px;
+//   }
+  
+//   @media screen and (max-width: 1000px) {
+//     body {
+//       padding: 30px;
+//     }
+    
+//     .ajax-section .cities {
+//       grid-template-columns: repeat(3, 1fr);
+//     }
+//   }
+  
+//   @media screen and (max-width: 700px) {
+//     .heading,
+//     .ajax-section .city-temp {
+//       font-size: 3rem;
+//     }
+    
+//     .ajax-section {
+//       margin-top: 20px;
+//     }
+    
+//     .top-banner form {
+//       flex-direction: column;
+//       align-items: flex-start;
+//     }
+    
+//     .top-banner form input,
+//     .top-banner form button {
+//       width: 100%;
+//     }
+  
+//     .top-banner form button {
+//       margin: 20px 0 0 0;
+//     }
+    
+//     .top-banner form .msg {
+//       position: static;
+//       max-width: none;
+//       min-height: 0;
+//       margin-top: 10px;
+//     }
+  
+//     .ajax-section .cities {
+//       grid-template-columns: repeat(2, 1fr);
+//     }
+//   }
+  
+//   @media screen and (max-width: 500px) {
+//     body {
+//       padding: 15px;
+//     }
+    
+//     .ajax-section .cities {
+//       grid-template-columns: repeat(1, 1fr);
+//     }
+//   }
+$border-radius: 20px;
+
+.widget {
+    display: flex;
+    height: 300px;
+    width: 450px;
+    flex-wrap: wrap;
+    // cursor: pointer;
+    border-radius: $border-radius;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    
+    .weatherIcon{
+      flex: 1 100%;
+      height: 60%;
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+      // background: #222831;
+    //   font-family: weathericons;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 100px;
+      
+      img{
+        padding-top: 30px;
+      }
+    }
+    
+    .weatherInfo{
+      flex: 0 0 62%;
+      height: 40%;
+      background: #080705;
+      border-bottom-left-radius: $border-radius;
+      display: flex;
+      align-items: center;
+      color: white;
+      
+      .temperature{
+        flex: 0 0 40%;
+        width: 100%;
+        font-size: 65px;
+        display: flex;
+        justify-content: space-around;
+      }
+      
+      .description{
+        flex: 0 60%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        
+        .weatherCondition{
+          text-transform: uppercase;
+          font-size: 28px;
+          font-weight: 100;
+        }
+        
+        .place{
+          font-size: 15px;
+        }
+      }
+    }
+    
+    .date{
+      flex: 0 0 38%;
+      height: 40%;
+      background: #70C1B3;
+      border-bottom-right-radius: $border-radius;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: white;
+      font-size: 28px;
+      font-weight: 800;
+      text-align: center;
+    }
+  }
+  
+//   p{
+//     position: fixed;
+//     bottom: 0%;
+//     right: 2%;
+//     a{
+//       text-decoration: none;
+//       color: #E4D6A7;
+//       font-size: 10px;
+//     }
+//   }

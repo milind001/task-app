@@ -36,3 +36,33 @@
     width: fit-content;
     border-radius: 3px;
   }
+
+  .status {
+    display: flex;
+    div{
+      display: flex;
+      width: 125px;
+      .dot {
+        height: 25px;
+        width: 25px;
+        
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .col-1{
+        background-color: #2070C4;
+      }
+      .col-2{
+        background-color: #B57EDC;
+      }
+      .col-3{
+        background-color: #05BBD2;
+      }
+      p{
+        margin: 0px 0px 15px 10px;
+      }
+    }
+  }
+ 
+  
+  

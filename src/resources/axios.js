@@ -3,7 +3,8 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: "https://nodejs-tm.herokuapp.com/"
+    // baseURL: "https://nodejs-tm.herokuapp.com/"
+    baseURL: "http://localhost:4000/"
 });
 
 instance.interceptors.request.use(
